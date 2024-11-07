@@ -3,7 +3,7 @@ class BestTimetoBuyandSellStock {
 	
 	 public static int maxProfit(int[] prices) {
         int maxProfit = 0;
-		int minBuy = prices[0];
+	int minBuy = prices[0];
         /*boolean flag = false;
         for(int i = 0; i<=prices.length-2; i++){
             for(int j = i+1; j<=prices.length-1;j++){
@@ -24,12 +24,12 @@ class BestTimetoBuyandSellStock {
 		
 		//optimized
 		
-		for(int i=1;i<prices.length;i++){
-			minBuy = Math.min(minBuy,prices[i]);
-			int priceDiff = prices[i]-minBuy;
-			maxProfit = Math.max(priceDiff,maxProfit);
-		}
-		return maxProfit;
+	for(int i=1;i<prices.length;i++){
+		minBuy = Math.min(minBuy,prices[i]);
+		int priceDiff = prices[i]-minBuy;
+		maxProfit = Math.max(priceDiff,maxProfit);
+	}
+	return maxProfit;
     }
 	
 	public static void main(String[] args){
